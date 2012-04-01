@@ -1,0 +1,2 @@
+Any content will
+be represented as one HighlightedBlock with black font color

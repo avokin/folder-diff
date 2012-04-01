@@ -1,0 +1,1 @@
+class TestClass {String s="string";}

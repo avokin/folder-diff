@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="actionManager" class="ru.avokin.uidiff.common.view.actions.impl.ActionManagerImpl" scope="singleton"/>
+
+    <bean id="viewManager" class="ru.avokin.uidiff.common.view.viewManager.impl.ViewManagerImpl">
+        <constructor-arg index="0" ref="actionManager"/>
+    </bean>
+
+    <bean id="javaCodeHighlighter" class="ru.avokin.highlighting.impl.java.JavaCodeHighlighter"/>
+    
+    <bean id="plainTextCodeHighlighter" class="ru.avokin.highlighting.impl.plaintext.PlainTextCodeHighlighter"/>
+
+    <bean id="codeHighlighterManager" class="ru.avokin.highlighting.impl.CodeHighlighterManagerImpl">
+        <constructor-arg index="0">
+            <map>
+                <entry key="java" value-ref="javaCodeHighlighter"/>
+                <entry key="cs" value-ref="javaCodeHighlighter"/>
+            </map>
+        </constructor-arg>
+
+        <constructor-arg index="1" ref="plainTextCodeHighlighter"/>
+    </bean>
+
+</beans>
