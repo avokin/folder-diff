@@ -8,5 +8,5 @@ It is an application that allows to browse differences of two directories or two
 Screenshots
 ===========
 
-![](http://github.com/avokin/folder-diff/blob/master/sshots/file.png)
-![](http://github.com/avokin/folder-diff/blob/master/sshots/folder.jpg)
+![](https://github.com/avokin/folder-diff/blob/master/sshots/file.png)
+![](https://github.com/avokin/folder-diff/blob/master/sshots/folder.png)
