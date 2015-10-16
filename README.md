@@ -9,13 +9,13 @@ The app has syntax highlighting for Java programming language. Also it's easy to
 Screenshots
 ===========
 Differences between two directories displayed as follows:
-![](http://github.com/avokin/folder-diff/blob/master/sshots/folder.png)
+![](https://raw.githubusercontent.com/avokin/folder-diff/master/sshots/folder.png)
 File or folder that exists in the left window but missed in the right has gray background (it was deleted).
 File or folder that exists in the right window but missed in the left has green background (it was created).
 File that has differences between the left and the right version has blue background (it was changed).
 
 Differences in files represented in the same way. Added line has green background, deleted - gray and changed - blue:
-![](http://github.com/avokin/folder-diff/blob/master/sshots/file.png)
+![](https://raw.githubusercontent.com/avokin/folder-diff/master/sshots/file.png)
 
 Syntax highlighting implemented as follows:
-![](http://github.com/avokin/folder-diff/blob/master/sshots/highlighting.png)
+![](https://raw.githubusercontent.com/avokin/folder-diff/master/sshots/highlighting.png)
